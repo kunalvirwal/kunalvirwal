@@ -23,11 +23,7 @@ section{
     background-color: var(--primgrey);
     height:110vh;
     color: white;
-    /* display:flex; */
-    /* flex-direction:column;
-    justify-content:center;
-    align-items: center;
-     */
+    
 }
 .homehead{
     margin:0;
@@ -37,20 +33,19 @@ section{
     display:flex;
     position:fixed;
     background-color: #212121;
-    min-height:2.5vh;
+    min-height:1.75vh;
     padding: 1rem;
     width: 100vw;
     flex-wrap:wrap;
+    z-index: 1000;
 }
 
 .nav a{
-    display:flex;
-    min-width:5rem;
     
+    min-width:5rem;
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
-    
     margin: 2vh;
     transition: 0.2s ease ;
 }
@@ -66,15 +61,14 @@ section{
 }
 .intro{
     margin:0;
-    
-    
+   
 }
 div p{
     margin:0;
     font-size: 1.3rem;
     padding-bottom:0rem ;
     color:aliceblue;
-    /* color: #817c7c; */
+
 }
 div h1{
     font-size: 7rem;
@@ -91,9 +85,7 @@ div h1+p{
     justify-content: center;
 }
 .takeoff{
-    /* margin-left: 48%;
-    padding-top: 13%; */
-    /* align-self:center; */
+
     font-size: 2rem;
     animation-duration: 1.5s;
     animation-name: hop;
@@ -117,7 +109,7 @@ div h1+p{
 
 @media only screen and (max-width:700px) {
     div h1{
-        font-size: 3rem;
+        font-size: 15vw;
         letter-spacing: .6ch;
         
     }
@@ -132,6 +124,7 @@ div h1+p{
 #about{
     background-color:  var(--prigrey2);
     padding:4rem;
+    padding-top: 5rem;
     min-height:100vh;
 }
 .abthead{
@@ -155,10 +148,11 @@ div h1+p{
     color: var(--textgrey);
 }
 .wrapper{
+    margin-top: 10vh;
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-between;
-    height:50%
+    justify-content: space-around;
+    height:50%;
     
 }
 .card{
@@ -179,7 +173,7 @@ div h1+p{
 .card img{
     border-radius: 0.5rem;
     width:100%;
-    /* border: 2px solid var(--textgrey); */
+
     height:50%;
 }
 .card p{
@@ -190,7 +184,8 @@ div h1+p{
 /* //////////////////////////////////////////////// projects page */
 #projects{
     background-color: var(--primgrey);
-    padding:3rem;
+    padding:4rem;
+    padding-top:4rem;
     min-height:100vh;
 }
 .projhead{
@@ -244,12 +239,11 @@ div h1+p{
     border-radius: 0.5rem;
     width:100%;
     height:100%;
-    
     border: 2px solid var(--primgrey);
     
 }
 
-/* ///////////////////////////////////////////////// last  */
+/* ///////////////////////////////////////////////// last page */
 #lastpage{
     background-color: var(--prigrey2);
     display:block;
@@ -277,9 +271,16 @@ div h1+p{
     display: flex;
     justify-content: space-around;
 }
+
+.links a:hover{
+    translate:0 -1rem;
+}
 @media only screen and (max-width:770px){
     .links{
         width:30rem;
+    }
+    .nav{
+        justify-content: center;
     }
     .nav a{
         min-width:3rem;
@@ -293,9 +294,13 @@ div h1+p{
         color:var(--pricyan);
         font-size: 1.2rem;
     }
+    .abthead, .abtthings, .projhead, .lasthead{
+        text-align: center;
+    }
 
     
 }
+
 @media only screen and (max-width:590px){
     .lasthead{
         font-size:1.75rem;
@@ -303,12 +308,24 @@ div h1+p{
     .links{
         width:15rem;
         height:2rem;
+        align-self: center;
     }
     .links a img{
         width:2rem;
         height:2rem;
     }
     
+}
+@media only screen and (max-width:464px){
+    .lasthead, .lasthead span{
+        font-size:1rem;
+    }
+}
+
+@media only screen and (max-height:830px){
+    .card{
+        line-height: 2rem;
+    }
 }
 #lastpage p{
     font-size: 2rem;
