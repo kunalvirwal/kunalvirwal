@@ -1,0 +1,160 @@
+:root{
+    --primgrey:#1f1f1f;
+    --textgrey:#817c7c;
+    --textgrey2:#cac2c2;
+    --prigrey2:#323232;
+    --pricyan:#08d9d6;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    margin:0;
+    font-family: "Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;  /* "Protest Guerrilla", */
+}
+section{
+    height:110vh;
+    width:auto;
+}
+/* ////////////////////////////////////////////////// Homepage */
+#home{
+    background-color: var(--primgrey);
+    
+    color: white;
+    
+}
+.nav{
+    /* display:flex; */
+    position:fixed;
+    background-color: #212121;
+    height:2.5vh;
+    padding: 1rem;
+    width: 100vw;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    
+    margin: 2vh;
+    transition: 0.2s ease ;
+}
+.nav a:hover{
+    color:var(--pricyan);
+    /* font-size: 1.6rem; */
+}
+.intro{
+    margin:0;
+    padding-left: 30%;
+    padding-top: 18%;
+    
+}
+div p{
+    margin:0;
+    font-size: 1.3rem;
+    padding-bottom:0rem ;
+    color:aliceblue;
+    /* color: #817c7c; */
+}
+div h1{
+    font-size: 7rem;
+    letter-spacing: .8ch;
+    color: var(--pricyan);
+}
+div h1+p{
+    font-size: 2rem;
+    color: var(--textgrey) ;
+}
+.takeoff{
+    margin-left: 48%;
+    padding-top: 13%;
+    font-size: 2rem;
+    animation-duration: 1.5s;
+    animation-name: hop;
+    animation-iteration-count: infinite;
+    color:var(--textgrey2);
+}
+@keyframes hop {
+    from{
+        margin-top:0rem;
+    }
+    30%{
+        margin-top:5rem;
+    }
+    70%{
+        margin-top:5rem;
+    }
+    to{
+        margin-top:0rem
+    }
+}   
+
+@media only screen and (max-width: 768px) {
+
+    div p{
+        margin:0;
+        font-size: 1rem;
+        padding-bottom:0rem ;
+        color:aliceblue;
+    }
+    div h1{
+        font-size: 3rem;
+        letter-spacing: .8ch;
+        
+    }
+    .intro{
+        margin:0;
+        padding-left: 17%;
+        padding-bottom: 18%;
+        
+    }
+    div h1+p{
+        font-size: 1rem;
+        color: #817c7c;
+    }
+    .takeoff{
+        margin-left:40%;
+        padding-top: 13%;
+        font-size: 1rem;        
+    }
+}
+
+
+/* /////////////////////////////////////////////////////////////////// About page*/
+#about{
+    background-color:  var(--prigrey2);
+    padding:4rem;
+}
+.abthead{
+    color: var(--pricyan);
+    font-size: 2.5rem;
+    font-family: "Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.3ch;
+}
+.highlight{
+    color:var(--pricyan);
+}
+.abt{
+    color: var(--textgrey2);
+    font-size: 1.6rem; 
+    letter-spacing: 0.1ch;
+    line-height: 2rem;
+    font-weight: 600;
+    font-family: "Teko","Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;
+}
+.abthead span{
+    color: var(--textgrey);
+}
+.wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.card{
+    background-color:var(--primgrey);
+    padding:1rem;
+    width:20%;
+}
+#projects{
+    background-color: green;
+}
