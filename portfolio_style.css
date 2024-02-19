@@ -188,11 +188,16 @@ div h1+p{
     padding-top:4rem;
     min-height:100vh;
 }
+.headcenter{
+    display:flex;
+    justify-content: center;
+}
 .projhead{
     color: var(--pricyan);
     font-size: 3rem;
     font-family: "Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.3ch;
+    
 
 }
 .projhead span{
@@ -249,6 +254,7 @@ div h1+p{
     display:block;
     padding:4rem;
     height:70vh;
+    
 }  
 .lasthead{
     color: var(--pricyan);
@@ -275,6 +281,9 @@ div h1+p{
 .links a:hover{
     translate:0 -1rem;
 }
+.abthead, .abtthings, .projhead, .lasthead{
+    text-align: center;
+}
 @media only screen and (max-width:770px){
     .links{
         width:30rem;
@@ -294,9 +303,7 @@ div h1+p{
         color:var(--pricyan);
         font-size: 1.2rem;
     }
-    .abthead, .abtthings, .projhead, .lasthead{
-        text-align: center;
-    }
+    
 
     
 }
@@ -330,6 +337,7 @@ div h1+p{
 #lastpage p{
     font-size: 2rem;
     color: var(--textgrey);
+    text-align: center;
 }
 .highlighter:hover{
     transition: all ease 0.05s;
