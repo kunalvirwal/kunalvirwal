@@ -1,345 +1,371 @@
-:root{
-    --primgrey:#1f1f1f;
-    --textgrey:#817c7c;
-    --textgrey2:#cac2c2;
-    --prigrey2:#323232;
-    --pricyan:#08d9d6;
-    --pricyan2:#0d7377;
-    --pricyan3:#00999e;
-}
-html{
-    scroll-behavior:smooth;
-}
-body{
-    margin:0;
-    font-family: "Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;  /* "Protest Guerrilla", */
-}
-section{
-    
-    width:auto;
-}
-/* ////////////////////////////////////////////////// Homepage */
-#home{
-    background-color: var(--primgrey);
-    height:110vh;
-    color: white;
-    
-}
-.homehead{
-    margin:0;
+:root {
+  --primgrey: #1f1f1f;
+  --textgrey: #817c7c;
+  --textgrey2: #cac2c2;
+  --prigrey2: #323232;
+  --pricyan: #08d9d6;
+  --pricyan2: #0d7377;
+  --pricyan3: #00999e;
 }
 
-.nav{
-    display:flex;
-    position:fixed;
-    background-color: #212121;
-    min-height:1.75vh;
-    padding: 1rem;
-    width: 100vw;
-    flex-wrap:wrap;
-    z-index: 1000;
+html {
+  scroll-behavior: smooth;
 }
 
-.nav a{
-    
-    min-width:5rem;
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    margin: 2vh;
-    transition: 0.2s ease ;
+body {
+  margin: 0;
+  font-family: "Protest Guerrilla", Verdana, Geneva, Tahoma, sans-serif;
 }
-.nav a:hover{
-    color:var(--pricyan);
-    font-size: 1.7rem;
-}
-.wrapperone{
-    display: flex;
-    height:85vh;
-    align-items: center;
-    justify-content: center;
-}
-.intro{
-    margin:0;
-   
-}
-div p{
-    margin:0;
-    font-size: 1.3rem;
-    padding-bottom:0rem ;
-    color:aliceblue;
 
+section {
+  width: auto;
 }
-div h1{
-    font-size: 7rem;
-    letter-spacing: .8ch;
-    color: var(--pricyan);
-}
-div h1+p{
-    font-size: 2rem;
-    color: var(--textgrey) ;
-}
-.wrappertwo{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.takeoff{
 
-    font-size: 2rem;
-    animation-duration: 1.5s;
-    animation-name: hop;
-    animation-iteration-count: infinite;
-    color:var(--textgrey2);
+#home {
+  background-color: var(--primgrey);
+  height: 110vh;
+  color: white;
 }
+
+.homehead {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  background-color: #212121;
+  min-height: 1.75vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.nav a {
+  min-width: 5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin: 2vh;
+  transition: 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--pricyan);
+  font-size: 1.7rem;
+}
+
+.wrapperone {
+  display: flex;
+  height: 85vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  margin: 0;
+}
+
+div p {
+  margin: 0;
+  font-size: 1.3rem;
+  padding-bottom: 0rem;
+  color: aliceblue;
+}
+
+div h1 {
+  font-size: 7rem;
+  letter-spacing: 0.8ch;
+  color: var(--pricyan);
+}
+
+div h1 + p {
+  font-size: 2rem;
+  color: var(--textgrey);
+}
+
+.wrappertwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.takeoff {
+  font-size: 2rem;
+  animation-duration: 1.5s;
+  animation-name: hop;
+  animation-iteration-count: infinite;
+  color: var(--textgrey2);
+}
+
 @keyframes hop {
-    from{
-        margin-top:0rem;
-    }
-    30%{
-        margin-top:5rem;
-    }
-    70%{
-        margin-top:5rem;
-    }
-    to{
-        margin-top:0rem
-    }
-}  
+  from {
+    margin-top: 0rem;
+  }
 
-@media only screen and (max-width:700px) {
-    div h1{
-        font-size: 15vw;
-        letter-spacing: .6ch;
-        
-    }
-    div h1+p{
-        font-size: 1rem;
-        color: #817c7c;
-    }
+  30% {
+    margin-top: 5rem;
+  }
+
+  70% {
+    margin-top: 5rem;
+  }
+
+  to {
+    margin-top: 0rem;
+  }
 }
 
+@media only screen and (max-width: 700px) {
+  div h1 {
+    font-size: 15vw;
+    letter-spacing: 0.6ch;
+  }
 
-/* /////////////////////////////////////////////////////////////////// About page*/
-#about{
-    background-color:  var(--prigrey2);
-    padding:4rem;
-    padding-top: 5rem;
-    min-height:100vh;
+  div h1 + p {
+    font-size: 1rem;
+    color: #817c7c;
+  }
 }
-.abthead{
-    color: var(--pricyan);
-    font-size: 2.5rem;
-    font-family: "Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.3ch;
-}
-.highlight{
-    color:var(--pricyan);
-}
-.abt{
-    color: var(--textgrey2);
-    font-size: 1.6rem; 
-    letter-spacing: 0.1ch;
-    line-height: 2rem;
-    font-weight: 600;
-    font-family: "Teko","Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;
-}
-.abthead span{
-    color: var(--textgrey);
-}
-.wrapper{
-    margin-top: 10vh;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    height:50%;
-    
-}
-.card{
-    background-color:var(--primgrey);
-    padding:1rem;
-    width:20%;
-    height:55vh;
-    border-radius: 0.5rem;
-    transition: all ease 0.3s;
-    min-width: 240px;
-    margin-bottom: 1rem;
-    border: 2px solid rgb(90, 93, 100);
-}
-.card:hover{
-    height:60vh;
-    width:22%;
-}
-.card img{
-    border-radius: 0.5rem;
-    width:100%;
 
-    height:50%;
+#about {
+  background-color: var(--prigrey2);
+  padding: 4rem;
+  padding-top: 5rem;
+  min-height: 100vh;
 }
-.card p{
-    font-family: "Teko","Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;
-    margin:1rem;
-    font-size: 2rem;
+
+.abthead {
+  color: var(--pricyan);
+  font-size: 2.5rem;
+  font-family: "Protest Guerrilla", Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.3ch;
 }
-/* //////////////////////////////////////////////// projects page */
-#projects{
-    background-color: var(--primgrey);
-    padding:4rem;
-    padding-top:4rem;
-    min-height:100vh;
+
+.highlight {
+  color: var(--pricyan);
 }
-.headcenter{
-    display:flex;
+
+.abt {
+  color: var(--textgrey2);
+  font-size: 1.6rem;
+  letter-spacing: 0.1ch;
+  line-height: 2rem;
+  font-weight: 600;
+  font-family: "Teko", "Protest Guerrilla", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.abthead span {
+  color: var(--textgrey);
+}
+
+.wrapper {
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 50%;
+}
+
+.card {
+  background-color: var(--primgrey);
+  padding: 1rem;
+  width: 20%;
+  height: 55vh;
+  border-radius: 0.5rem;
+  transition: all ease 0.3s;
+  min-width: 240px;
+  margin-bottom: 1rem;
+  border: 2px solid rgb(90, 93, 100);
+}
+
+.card:hover {
+  height: 60vh;
+  width: 22%;
+}
+
+.card img {
+  border-radius: 0.5rem;
+  width: 100%;
+
+  height: 50%;
+}
+
+.card p {
+  font-family: "Teko", "Protest Guerrilla", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+#projects {
+  background-color: var(--primgrey);
+  padding: 4rem;
+  padding-top: 4rem;
+  min-height: 100vh;
+}
+
+.headcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.projhead {
+  color: var(--pricyan);
+  font-size: 3rem;
+  font-family: "Protest Guerrilla", Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.3ch;
+}
+
+.projhead span {
+  color: var(--textgrey);
+}
+
+.wrapperflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardsm {
+  background-color: var(--prigrey2);
+  padding: 1rem;
+  width: 80vw;
+  height: 30vh;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: all ease 0.3s;
+
+  margin-bottom: 2rem;
+  border: 2px solid black;
+}
+
+@media only screen and (max-width: 480px) {
+  .cardsm {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .cardsm {
+    max-width: 25rem;
+  }
+}
+
+.cardsm:hover {
+  opacity: 50%;
+}
+
+.cardsm img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primgrey);
+}
+
+#lastpage {
+  background-color: var(--prigrey2);
+  display: block;
+  padding: 4rem;
+  height: 70vh;
+}
+
+.lasthead {
+  color: var(--pricyan);
+  font-size: 2.5rem;
+  font-family: "Protest Guerrilla", Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.3ch;
+}
+
+.lasthead span {
+  font-size: 3rem;
+
+  color: var(--textgrey);
+}
+
+.links {
+  width: 40rem;
+  padding: 1rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a:hover {
+  translate: 0 -1rem;
+  transition: all ease 0.2s;
+}
+
+.abthead,
+.abtthings,
+.projhead,
+.lasthead {
+  text-align: center;
+}
+
+@media only screen and (max-width: 770px) {
+  .links {
+    width: 30rem;
+  }
+
+  .nav {
     justify-content: center;
-}
-.projhead{
+  }
+
+  .nav a {
+    min-width: 3rem;
+
+    font-size: 1rem;
+
+    margin: 2vh;
+    transition: 0.2s ease;
+  }
+
+  .nav a:hover {
     color: var(--pricyan);
-    font-size: 3rem;
-    font-family: "Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.3ch;
-    
-
-}
-.projhead span{
-    color: var(--textgrey);
-}
-.wrapperflex{
-    
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-
-}
-.cardsm{
-    background-color:var(--prigrey2);
-    padding:1rem;
-    width:80vw;
-    height:30vh;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    transition: all ease 0.3s;
-    
-    margin-bottom: 2rem;
-    border: 2px solid black;
-    
-}
-@media only screen and (max-width:480px){
-    
-    .cardsm{
-        width:80vw;
-    }
-}
-@media only screen and (min-width:480px){
-    
-    .cardsm{
-        max-width:25rem;
-    }
+    font-size: 1.2rem;
+  }
 }
 
-.cardsm:hover{
-    opacity:50%
+@media only screen and (max-width: 590px) {
+  .lasthead {
+    font-size: 1.75rem;
+  }
+
+  .links {
+    width: 15rem;
+    height: 2rem;
+    align-self: center;
+  }
+
+  .links a img {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
-.cardsm img{
-    border-radius: 0.5rem;
-    width:100%;
-    height:100%;
-    border: 2px solid var(--primgrey);
-    
+@media only screen and (max-width: 464px) {
+  .lasthead,
+  .lasthead span {
+    font-size: 1rem;
+  }
 }
 
-/* ///////////////////////////////////////////////// last page */
-#lastpage{
-    background-color: var(--prigrey2);
-    display:block;
-    padding:4rem;
-    height:70vh;
-    
-}  
-.lasthead{
-    color: var(--pricyan);
-    font-size: 2.5rem;
-    font-family: "Protest Guerrilla",Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.3ch;
-   
-}
-.lasthead span{
-    font-size: 3rem;
-
-    color: var(--textgrey);
-}
-.links{
-    width: 40rem;
-    padding: 1rem;
-    height:4rem;
-    background-color: white;
-    border-radius: 2rem ;
-    display: flex;
-    justify-content: space-around;
+@media only screen and (max-height: 830px) {
+  .card {
+    line-height: 2rem;
+  }
 }
 
-.links a:hover{
-    translate:0 -1rem;
-}
-.abthead, .abtthings, .projhead, .lasthead{
-    text-align: center;
-}
-@media only screen and (max-width:770px){
-    .links{
-        width:30rem;
-    }
-    .nav{
-        justify-content: center;
-    }
-    .nav a{
-        min-width:3rem;
-        
-        font-size: 1rem;
-        
-        margin: 2vh;
-        transition: 0.2s ease ;
-    }
-    .nav a:hover{
-        color:var(--pricyan);
-        font-size: 1.2rem;
-    }
-    
-
-    
+#lastpage p {
+  font-size: 2rem;
+  color: var(--textgrey);
+  text-align: center;
+  padding-top: 3rem;
 }
 
-@media only screen and (max-width:590px){
-    .lasthead{
-        font-size:1.75rem;
-    }
-    .links{
-        width:15rem;
-        height:2rem;
-        align-self: center;
-    }
-    .links a img{
-        width:2rem;
-        height:2rem;
-    }
-    
-}
-@media only screen and (max-width:464px){
-    .lasthead, .lasthead span{
-        font-size:1rem;
-    }
-}
-
-@media only screen and (max-height:830px){
-    .card{
-        line-height: 2rem;
-    }
-}
-#lastpage p{
-    font-size: 2rem;
-    color: var(--textgrey);
-    text-align: center;
-}
-.highlighter:hover{
-    transition: all ease 0.05s;
-    color:var(--pricyan);
+.highlighter:hover {
+  transition: all ease 0.05s;
+  color: var(--pricyan);
 }
